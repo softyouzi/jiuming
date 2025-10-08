@@ -1,0 +1,33 @@
+运行步骤
+需要先安装Python的相关依赖：requests，pymysql，Django==3.2.8,bs4,py2neo==4.3.0，pyahocorasick==1.4.2,urllib，jieba
+
+安装jdk1.8，配置环境变量，neo4j图形数据库
+具体步骤如下：
+
+第1步：创建数据库，数据库名：medical_care_intention_analysis
+ 
+第2步：安装neo4j
+将文件夹下neo4j-community-3.1.0-windows\neo4j-community-3.1.0 放到环境变量中，添加NEO4J_HOME
+以管理员身份打开cmd (注意 管理员身份)
+.键入 neo4j.bat console 出现下面的信息， 表示安装成功 之后用浏览器打开网址
+
+Microsoft Windows 版本 10.0.19045.3208c)Microsoft Corporation。保留所有权利
+:\WINDOWSlsystem32>neo4j.batconsole-27 15:09:28.304+000002401INFO
+Starting..
+2024-01-27INFOBolt enabled on localhost:768715:09:30.106+00002024-01-27 15:09:34.538+0000INFO Started.
+2024-01-27 15:09:35.565+0000Remote interface available at http://localhost:7474/
+
+第3步：执行SQL语句，Navicat打开medical_care_intention_analysis.sql文件，运行该文件中的SQL语句
+
+第4步：源码文件为medical_care_intention_analysis.zip，修改源代码中的settings.py文件，改成自己的mysql数据库用户名和密码
+ev
+第5步：运行命令：python manage.py runserver 8091
+
+第6步：打开浏览器查看http://127.0.0.1:8091
+
+把当前目录下的neo4j-community-3.1.0-windows.zip，解压到项目用的解释器site-packages目录下
+
+
+测试账户
+ 账户：admin 密码：123456
+ 账户：user1  密码：123456

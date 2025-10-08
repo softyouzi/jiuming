@@ -1,0 +1,11 @@
+requests
+pymysql
+Django==3.2.8
+bs4
+py2neo==4.3.0
+pyahocorasick==2.1.0
+urllib3==2.2.1
+jieba
+neobolt==1.7.15
+neotime==1.7.3
+Pillow 
